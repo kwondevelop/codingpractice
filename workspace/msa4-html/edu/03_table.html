@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Tag</title>
+</head>
+<body>
+  <!-- table 태그 : 표를 만듦, 표 전체를 감싸는데 사용 -->
+  <!-- tr 태그 : 표의 행, th 혹은 td 태그를 자식 태그로 가짐 -->
+  <!-- th 태그 : 표의 제목 열 -->
+  <!-- td 태그 : 표의 데이터 열 -->
+  <!-- caption 태그 : 표의 제목 혹은 설명을 작성 -->
+  <!-- thead 태그 : 표의 상단 영역을 묶는 그룹 태그 -->
+  <!-- tbody 태그 : 표의 중단 영역을 묶는 그룹 태그 -->
+  <!-- tfoot 태그 : 표의 하단 영역을 묶는 그룹 태그 -->
+  <!-- colgroup 태그 : 열 그룹을 묶는 태그 -->
+  <!-- col 태그 : 열 그룹에서 열을 지정하는 태그 --> 
+  <table border="1px">
+		<caption>성적표</caption>
+		<colgroup>
+			<col style="background-color: red;">
+			<col style="background-color: orange;">
+			<col style="background-color: yellow;">
+			<col style="background-color: green;">
+			<col style="background-color: blue;">
+			<col style="background-color: purple;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>반</th>
+				<th>이름</th>
+				<th>국어</th>
+				<th>영어</th>
+				<th>수학</th>
+				<th>과학</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">1반</td>
+				<td>홍길동</td>
+				<td>90점</td>
+				<td>80점</td>
+				<td>50점</td>
+				<td>60점</td>
+			</tr>
+			<tr>
+				<!-- <td>1반</td> -->
+				<td>김영희</td>
+				<td>50점</td>
+				<td>60점</td>
+				<td>90점</td>
+				<td>100점</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="2">평균</th>
+				<!-- <td></td> -->
+				<td>70점</td>
+				<td>70점</td>
+				<td>70점</td>
+				<td>80점</td>
+			</tr>
+		</tfoot>
+ </table>
+ <table border="1px">
+		<colgroup>
+			<col>
+			<col>
+			<col>
+			<!-- 4번째 열에 스타일 지정 -->
+			<col class="col2">
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<td rowspan="2">2반</td>
+				<td>김첨지</td>
+				<td>90점</td>
+				<td>80점</td>
+				<td>50점</td>
+				<td>60점</td>
+			</tr>
+			<tr>
+				<!-- <td>2반</td> -->
+				<td>안철수</td>
+				<td>50점</td>
+				<td>60점</td>
+				<td>90점</td>
+				<td>100점</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="2">평균</th>
+				<!-- <td></td> -->
+				<td>70점</td>
+				<td>70점</td>
+				<td>70점</td>
+				<td>80점</td>
+			</tr>
+		</tfoot>
+ </table>
+</body>
+</html>
