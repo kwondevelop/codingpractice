@@ -7,9 +7,66 @@
 </head>
 <body>
   <!-- form 태그 : 유저가 입력한 정보를 제출하기 위하여 범위를 지정하는 태그 -->
+  <!-- method 속성 get, post 차이 : 
+  get은 URL에 데이터를 붙여서 전송, post는 본문에 데이터를 담아 전송 -->
   <form action="" method="get">
-  <!-- input 태그 : 데이터를 입력 받을 수 있는 태그 -->
-  <input type="text" maxlength="5" placeholder="아이디를 입력해주세요">
+    <!-- fieldset 태그 : 여러 컨트롤과 라벨을 묶을 때 사용하는 태그 -->
+    <fieldset>
+      <!-- legend 태그 : fieldset 태그의 제목을 정의할 때 사용하는 태그 -->
+      <legend>로그인 폼</legend>
+      <!-- input 태그 : 데이터를 입력 받을 수 있는 태그 -->
+      <input type="text" value="미리 넣어둔 값" name="readonlyEmail" readonly></input>
+      <br>
+      <label for="account">ID : </label>
+      <input type="text" id="account" minlength="2" maxlength="20" placeholder="아이디를 입력해주세요">
+      <!-- required : 필수 입력 -->
+      <!-- readonly : 읽기 전용(입력 불가) -->
+      <br>
+      <!-- label 태그 : 입력 받는 필드를 설명할 때 사용하는 태그 -->
+      <!-- input 태그의 id 속성 값과 label 태그의 for 속성 값을 동일하게 하여 연결 가능 -->
+      <label for="password">PW : </label>
+      <input type="password" id="password" minlength="8" maxlength="20" placeholder="비밀번호를 입력해주세요">
+      <br>
+      <label for="info">기타</label>
+      <!-- textarea 태그 : 여러 줄의 텍스트를 입력 받을 수 있는 태그 -->
+      <textarea name="info" id="info" cols="10" rows="5"></textarea>
+      <br>
+      <!-- select 태그 : 드롭다운(선택 가능한) 목록을 만드는 태그 -->
+      <!-- option 태그 : 드롭다운의 리스트를 만드는 태그 -->
+      <!-- value 속성 : 서버로 넘겨줄 값을 지정(내가 선택한 값) -->
+      <select name="rice" id="rice">
+        <option value="white">백미</option>
+        <option value="black">흑미</option>
+        <option value="brown">현미</option>
+      </select>
+    </fieldset> 
+    <!-- button 태그 : 클릭이 가능한 버튼을 만들어주는 태그 -->
+    <button type="submit">전송</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+    <br>
+    <!-- 기타 input 타입 -->
+    <input type="email" name="email" id="email">
+    <br>
+    <input type="number" name="number" id="number" min="0" max="999">
+    <br>
+    <input type="range" name="range" id="range">
+    <br>
+    <input type="date" name="date" id="date">
+    <br>
+    <input type="checkbox" name="fruit" id="banana">
+    <label for="banana">바나나</label>
+    <input type="checkbox" name="fruit" id="apple">
+    <label for="apple">사과</label>
+    <br>
+    <input type="radio" name="food" id="jeyuk" checked>
+    <label for="jeyuk">제육</label>
+    <input type="radio" name="food" id="gukbap">
+    <label for="gukbap">국밥</label>
+    <br>
+    <!-- 화면의 폼에는 보이지 않지만 사용자가 입력을 마치면 함께 서버로 전송되는 속성 값 -->
+    <input type="hidden" name="hiddenTest" value="내가 보내줄 값">
+    <input type="color" name="color" id="color">
   </form>
 </body>
 </html>

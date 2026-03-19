@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국인이 싫어하는 입력창</title>
+</head>
+<body>
+    <fieldset>
+        <legend>굉장히 화나는 전화번호 입력</legend>
+        1. 일일이 선택하기
+        <br>
+            <select name="firstnumber" id="firstnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="firstnumber" id="firstnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="firstnumber" id="firstnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="middlenumber" id="middlenumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="middlenumber" id="middlenumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="middlenumber" id="middlenumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="middlenumber" id="middlenumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="lastnumber" id="lastnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="lastnumber" id="lastnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="lastnumber" id="lastnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="lastnumber" id="lastnumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        <br><br>
+        2. 사이드바로 입력하기
+        <br>
+            <input type="range" min="0" max="99999999" id="rangeInput" oninput="rangeValue.innerText=this.value" style="width: 800px;">
+            <span id="rangeValue">0</span>
+        <br><br>
+        3. 일일이 체크하기
+        <br>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">0</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">1</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">2</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">3</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">4</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">5</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">6</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">7</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">8</label>
+            <input type="checkbox" id="firstnumber" name="firstnumber">
+            <label for="firstnumber">9</label>
+            <br>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">0</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">1</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">2</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">3</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">4</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">5</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">6</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">7</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">8</label>
+            <input type="checkbox" id="middlenumber" name="middlenumber">
+            <label for="middlenumber">9</label>
+            <br>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">0</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">1</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">2</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">3</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">4</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">5</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">6</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">7</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">8</label>
+            <input type="checkbox" id="lastnumber" name="lastnumber">
+            <label for="lastnumber">9</label>
+    </fieldset>
+</body>
+</html>
