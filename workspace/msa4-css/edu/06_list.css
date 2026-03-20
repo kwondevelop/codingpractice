@@ -1,0 +1,14 @@
+/* 번호(불릿) 스타일을 지정하는 속성 */
+/* ul {
+    list-style-type: "\1F439";
+} */
+
+/* 리스트의 들여쓰기 여부를 지정하는 속성 */
+ul {
+    list-style-position: inside;
+}
+
+/* 불릿을 이미지로 설정하는 속성 */
+ul {
+    list-style-image: url("./capybara.jpg");
+}

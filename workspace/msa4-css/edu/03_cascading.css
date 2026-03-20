@@ -1,0 +1,19 @@
+#id-style {
+    color: blueviolet;
+}
+
+.class-style {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+
+* {
+    color: skyblue;
+}
+
+h1 {
+    color: black;
+}

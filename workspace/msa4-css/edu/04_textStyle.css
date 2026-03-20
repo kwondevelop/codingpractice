@@ -1,0 +1,31 @@
+/* 픽셀 단위로 폰트 크기 조절 */
+/* ex) font-size: 100px; */
+
+/* em : 부모 요소의 글자 크기 기준 배율로 폰트 크기 조절 */
+/* ex) font-size: 2em; */
+
+/* rem : 최상위 요소의 글자 크기 기준 배율로 폰트 크기 조절 */
+/* ex) font-size: 2rem; */
+
+/* 폰트 크기 */
+.p-font-size {
+    font-size: 20px;
+}
+
+div {
+    font-size: 30px;
+}
+
+.p-font-size2 {
+    font-size: 2em;
+}
+
+/* 폰트 굵기 : 100 ~ 900을 설정 가능 */
+.p-font-weight {
+    font-weight: 900;
+}
+
+/* 폰트 지정 */
+body {
+    font-family: "D2Coding";
+}

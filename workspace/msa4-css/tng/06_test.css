@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+}
+
+li {
+    color: #ad3000;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+span {
+    color: #000000;
+    font-size: 0.75rem;
+    font-weight: normal;
+}

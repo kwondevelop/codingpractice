@@ -1,0 +1,53 @@
+/* 글자의 색상을 지정 */
+.h1-color {
+    color: rgb(127, 127, 127);
+}
+
+/* 글자에 밑줄을 생성 */
+.h1-text-decoration {
+    text-decoration: underline;
+}
+
+/* 글자 중간에 줄 긋기 */
+.h1-line-through {
+    text-decoration: line-through;
+}
+
+/* 글자 정렬 방향 */
+.p-align {
+    text-align: center;
+}
+
+/* 박스의 배경 색과 높이 */
+.box {
+    background-color: grey;
+    height: 100px;
+}
+
+/* 글자 줄 간격 조정 */
+.p-line-height {
+    line-height: 130px;
+}
+
+/* 영어를 대문자 혹은 소문자로 변환 */
+/* uppercase : 모든 글자를 대문자로 */
+/* lowercase : 모든 글자를 소문자로 */
+/* capitalize : 첫 글자를 대문자로 */
+.h1-text-transform {
+    text-transform: uppercase;
+}
+
+/* 글자 사이 간격 조정 */
+.h1-letter-spacing {
+    letter-spacing: 30px;
+}
+
+/* 단어 사이 간격 조정 */
+.h1-word-spacing {
+    word-spacing: -30px;
+}
+
+/* 글자 그림자 효과 */
+.h1-shadow {
+    text-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+}
