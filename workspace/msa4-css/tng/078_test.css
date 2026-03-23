@@ -2,15 +2,18 @@
     width: auto;
     height: 150px;
     background-color: #000000;
-    padding: 10px;
+    padding: 5px;
 }
 
 .box1-h1 {
     display: inline-block;
+    margin: 15px;
     color: #ffffff;
 }
 
 .box1-p {
+    margin: 15px;
+    margin-left: 15px;
     color: #d4a968;
 }
 
@@ -23,45 +26,8 @@
 
 .box2-p {
     margin-left: 10px;
+    padding : 10px;
     color: #ffffff;
-}
-
-.box2-1 {
-    border-width: 10px;
-}
-
-.box2-h1 {
-    text-align: center;
-    color: #ff0000;
-}
-
-.box2-p-1 {
-    text-align: center;
-    font-weight: bold;
-}
-
-.box2-p-2 {
-    text-align: center;
-    font-weight: bold;
-}
-
-span {
-    color: #002fff;
-}
-
-.box2-h1-2 {
-    text-align: center;
-    color: #ff0000;
-}
-
-.box2-p-3 {
-    text-align: center;
-    font-weight: bold;
-}
-
-.box2-p-4 {
-    text-align: center;
-    font-weight: bold;
 }
 
 .box3-h1 {
@@ -74,6 +40,23 @@ span {
     font-weight: bold;
 }
 
-.box3-p-2 {
+span {
+    color: #002fff;
+}
+
+.box4-h1 {
     text-align: center;
+    color: #ff0000;
+}
+
+.box4-p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.box-image {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
 }
