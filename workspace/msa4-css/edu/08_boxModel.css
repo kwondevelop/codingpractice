@@ -1,0 +1,99 @@
+/* margin : 외부 여백 */
+/* padding : 내부 여백 */
+/* border : 테두리 */
+
+span {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #ff00ff;
+}
+
+.box1 {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #00ff00;
+}
+
+.box2 {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #fff000;
+}
+
+.box-margin {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #000eee;
+}
+
+.span-display {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #ff7300;
+}
+
+.div-display {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #ff7300;
+}
+
+/* width : 요소의 너비 */
+.box1 {
+    width: 100px;
+}
+
+.box1 {
+/* 박스 모델의 크기를 계산하는 방법을 지정 */
+/* content-box: 콘텐츠 영역에만 요소의 크기를 지정 */
+/* border-box: 테두리 + 패딩 + 콘텐츠 영역에 요소의 크기를 지정 */
+    box-sizing: border-box;
+}
+
+.box2 {
+    box-sizing: content-box;
+}
+
+/* px : 고정 길이 단위 */
+/* % : 부모와 width에 따른 상대 길이 단위 */
+/* vw : 브라우저의 창 크기에 따른 상대 길이 단위 */
+.box2 {
+    box-sizing:content-box;
+    width: 20%
+}
+
+body {
+    width: 500px;
+}
+
+.box-margin {
+    width: 100px;
+    /* margin: auto; */
+
+    /* 마진 중첩 현상 */
+    /* HTML의 요소가 세로로 배치되어 있을 때, 각각의 margin이 큰 쪽으로 겹쳐지는 현상 */
+    /* 가로 배치에서는 마진 중첩 현상이 발생하지 않는다 */
+    margin: 30px;
+
+    padding: 10px;
+}
+
+/* 박스 모델에 그림자 효과 */
+/* 수평 거리, 수직 거리, 흐림 정도, 번짐 정도, 색상, 그림자 방향(은 생략 가능) */
+.box-margin {
+    box-shadow: 10px 10px 10px #00ffc8;
+}
+
+/* HTML 요소가 배치되는 방식을 지정 */
+.span-display {
+    width: 100px;
+    /* none : 요소를 보이지 않게 설정, 영역 차지 안 함 */
+    /* block : 기본적으로 가로 영역을 모두 사용하며, width, height 속성도 사용 가능 */
+    /* inline : 컨텐츠 크기만큼 영역을 사용하며, width, height 속성은 사용 불가 */
+    /* inline-block : 기본적으로 inline이지만 내부는 block처럼 표시 */
+    display: inline-block;
+}
+
+.div-display {
+    display: inline;
+}
