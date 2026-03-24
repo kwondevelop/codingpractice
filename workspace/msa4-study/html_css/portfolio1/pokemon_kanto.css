@@ -1,0 +1,26 @@
+* {
+    height: 648px;
+}
+
+@font-face {
+    font-family: 'NeoDgmPro';
+    src: url('./fonts/NeoDgmPro.woff') format('woff');
+    src: url('./fonts/NeoDgmPro.woff2') format('woff2');
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), 
+    url('./images/maps/kanto.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'NeoDgmPro';
+    font-size: 48px;    
+    font-weight: normal;
+    text-align: center;
+}

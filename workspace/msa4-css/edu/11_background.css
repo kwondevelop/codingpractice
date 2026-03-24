@@ -1,0 +1,41 @@
+.bg-box {
+    background-color: #6495ed;
+    width: 200px;
+    height: 200px;
+
+    padding: 10px;
+    border: 10px dotted #000000;
+
+    /* 배경 색의 적용 범위를 지정 */
+    background-clip: border-box;
+}
+
+.bg-img {
+    background-image: url("./nyang.png");
+    width: 300px;
+    height: 300px;
+
+    /* fixed로 설정 시, 스크롤을 이동해도 배경 이미지가 고정됨 */
+    /* background-attachment: fixed; */
+
+    /* 배경 이미지의 크기를 설정 */
+    /* background-size: cover; */
+
+    /* 배경 이미지의 반복 방법을 지정*/
+    /* background-repeat: repeat; */
+
+    /* 배경 이미지의 초기 위치를 지정 */
+    background-position: center;
+}
+
+.bg-gradation {
+    width: 200px;
+    height: 200px;
+
+    /* linear-gradient() : 선형 그라데이션 효과를 부여 */
+    /* background: linear-gradient(#fff, #000); */
+    /* background: linear-gradient(to right, #fff, #000); */
+    /* background: linear-gradient(#fff 30%, #0ff 70%, #000); */
+    /* background: radial-gradient(#00ff, #f00); */
+    background: linear-gradient(to right, red, orange, yellow, yellowgreen, skyblue, blue);
+}

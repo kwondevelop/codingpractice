@@ -1,0 +1,42 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.container {
+    width: 500px;
+    height: 530px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.position1 {
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    /* background-color: red; */
+}
+
+.position2 {
+    position: absolute;
+    top: 315px;
+    left: 65px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    /* background-color: blue; */
+}
+
+.position3 {
+    position: absolute;
+    top: 115px;
+    left: 265px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    /* background-color: green; */
+}
