@@ -30,7 +30,7 @@ h1 {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translateX(-50%);
 }
