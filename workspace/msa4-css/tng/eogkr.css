@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.main-box {
+    background-color: #ffffff;
+    width: 550px;
+    height: 720px;
+    position: relative;
+    top: 0;
+    margin: auto;
+    border: 1px dotted #000000;
+}
+
+.title-box {
+    background-color: rgb(10, 65, 60);
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    width: 500px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-box {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    width: 500px;
+    height: 400px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    position: absolute;
+    top: 334px;
+    left: 175px;
+    width: 350px;
+}
