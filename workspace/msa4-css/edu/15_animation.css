@@ -1,0 +1,55 @@
+﻿@keyframes tornado {
+    0% {
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.container > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    animation-name: tornado;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ball   { background-color: red;        animation-delay: 0s; }
+.ball2  { background-color: orange;     animation-delay: -0.14s; }
+.ball3  { background-color: yellow;     animation-delay: -0.29s; }
+.ball4  { background-color: lightgreen; animation-delay: -0.43s; }
+.ball5  { background-color: skyblue;    animation-delay: -0.57s; }
+.ball6  { background-color: blue; color: white;       animation-delay: -0.71s; }
+.ball7  { background-color: purple; color: white;     animation-delay: -0.86s; }
+.ball8  { background-color: red;        animation-delay: -1s; }
+.ball9  { background-color: orange;     animation-delay: -1.14s; }
+.ball10 { background-color: yellow;     animation-delay: -1.29s; }
+.ball11 { background-color: lightgreen; animation-delay: -1.43s; }
+.ball12 { background-color: skyblue;    animation-delay: -1.57s; }
+.ball13 { background-color: blue; color: white;       animation-delay: -1.71s; }
+.ball14 { background-color: purple; color: white;     animation-delay: -1.86s; }
+.ball15 { background-color: red;        animation-delay: -2s; }
+.ball16 { background-color: orange;     animation-delay: -2.14s; }
+.ball17 { background-color: yellow;     animation-delay: -2.29s; }
+.ball18 { background-color: lightgreen; animation-delay: -2.43s; }
+.ball19 { background-color: skyblue;    animation-delay: -2.57s; }
+.ball20 { background-color: blue; color: white;       animation-delay: -2.71s; }
+.ball21 { background-color: purple; color: white;     animation-delay: -2.86s; }

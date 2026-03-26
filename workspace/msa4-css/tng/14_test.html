@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="14_test.css">
+    <title>14_test</title>
+</head>
+<body>
+    <fieldset>
+        <legend>I want YOU!</legend>
+            <form action="">
+                <label for="id" class="id">이름</label>
+                <input type="text" class="id_box" id="id" name="id" required>
+                <br><br>
+                <label for="year" class="year">나이</label>
+                <input type="number" class="year_box" id="year" name="year" required>
+                <br><br>
+                <label for="gender" class="gender">성별</label>
+                <input type="radio" class="male_radio" name="gender" value="male" required><label for="male">남자</label>
+                <input type="radio" class="female_radio" name="gender" value="female" required><label for="female">여자</label>
+                <br><br>
+                <label for="request" class="memo">요청사항</label>
+                <textarea id="textarea" name="text" cols="45" rows="15" placeholder="요청 사항 입력"></textarea>
+                <br><br>
+                <button type="submit">보내기</button>
+                <span>내용을 다시 한 번 확인해 주세요.</span>
+            </form>      
+    </fieldset>
+
+    <!-- <form action="">
+        <fieldset>
+            <legend>I want YOU!</legend>
+
+                <label for="id" class="id required-st">이름</label>
+                <input type="text" class="id_box" id="id" name="id" required>
+                <br><br>
+
+                <label for="year" class="year required-st">나이</label>
+                <input type="number" class="year_box" id="year" name="year" required>
+                <br><br>
+
+                <label for="gender" class="gender required-st">성별</label>
+                <input type="radio" class="male_radio" name="gender" value="male" required><label for="male">남자</label>
+                <input type="radio" class="female_radio" name="gender" value="female" required><label for="female">여자</label>
+                <br><br>
+
+                <label for="request" class="memo">요청사항</label>
+                <textarea id="textarea" name="text" cols="45" rows="15" placeholder="요청 사항 입력"></textarea>
+                <br><br>
+
+                <div>
+                <button type="submit">보내기</button>
+                <span>내용을 다시 한 번 확인해 주세요.</span>
+                </div>
+        </fieldset>
+    </form> -->
+
+</body>
+</html>

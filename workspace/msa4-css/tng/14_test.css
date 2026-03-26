@@ -1,0 +1,48 @@
+fieldset {
+    background-image: url("./unclesam.jpg");
+    background-size: cover;
+}
+
+legend {
+    color: magenta;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.id::before, .year::before, .gender::before {
+    content: "*";
+    color: red;
+}
+
+.id_box, .year_box, .gender_box, textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+.id_box:focus, .year_box:focus, textarea:focus {
+    outline: 3px solid red;
+}
+
+.male_radio:checked + label, .female_radio:checked + label {
+    color: red;
+}
+
+.memo {
+    vertical-align: top;
+}
+
+span {
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+button:hover + span {
+    display: inline;
+}
+
+/* 하나로 통일 ^^ 클래스 주기 */
+/* .required-st::before {
+    content: "*";
+    color: red;
+} */
