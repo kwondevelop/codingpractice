@@ -1,0 +1,19 @@
+div {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (min-width: 600px) {
+    div {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div {
+        background-color: black;
+        color: pink;
+        font-size: 100px;
+    }
+}
