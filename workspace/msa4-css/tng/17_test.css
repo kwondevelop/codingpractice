@@ -1,0 +1,30 @@
+.container {
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top, .middle, .left-bottom {
+    background-color: black;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.right-bottom {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.item {
+    background-color: white;
+    flex: 1;
+}

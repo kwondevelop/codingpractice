@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    background-color: lightpink;
+    /* 부모 요소에 flex 적용 */
+    display: flex;
+    
+    /* 
+    row : 가로로 정렬 
+    row-reverse : 가로로 반대 방향 정렬 
+    column : 세로로 정렬
+    column-reverse : 세로로 반대 방향 정렬
+    */
+    flex-direction: row;
+
+    /* gap : 아이템들 간의 간격을 조절 */
+    gap: 10px;
+
+    /* flex-wrap : 줄 바꿈 여부를 지정 */
+    flex-wrap: wrap;
+
+    /* flex-flow : flex-direction과 flex-wrap을 한번에 설정
+    flex-flow: column nowrap; */
+
+    /* justify-content : 주 축(main axis) 방향으로 아이템 정렬 */
+    /* justify-content: flex-start; */
+
+    /* align-items : 교차 축(cross axis) 방향으로 아이템 정렬 */
+    /* align-content : 여러 줄의 교차 축(cross axis) 방향으로 아이템 정렬 */
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 1px solid black;
+
+    /* flex-basis : 아이템의 기본 크기 설정 */
+    /* flex-grow : 아이템이 남은 공간을 얼마나 차지할지 설정 */
+}
