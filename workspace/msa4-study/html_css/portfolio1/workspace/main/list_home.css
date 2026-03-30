@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'NeoDgmPro';
+    src: url('../../fonts/NeoDgmPro.woff') format('woff');
+    src: url('../../fonts/NeoDgmPro.woff2') format('woff2');
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.85)
+    ), 
+    url('../../images/maps/kanto.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-family: 'NeoDgmPro';
+    font-size: 48px;    
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 20;
+}
+
+.back-button img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 0 8px rgba(255, 200, 50, 0.6));
+}
+
+.back-button img:hover {
+    transform: scale(1.2);
+}
+
+.orbit-container {
+    position: relative;
+    width: 700px;
+    height: calc(100vh - 90px);
+    margin: 0 auto;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 580px;
+    height: 580px;
+    margin: -290px 0 0 -290px;
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: spin 60s linear infinite;
+}
+
+.planet:nth-child(1)  { top: 50%; left: 50%; transform: rotate(0deg) translateX(290px);      margin: -32.5px; }
+.planet:nth-child(2)  { top: 50%; left: 50%; transform: rotate(21.18deg) translateX(290px);  margin: -32.5px; }
+.planet:nth-child(3)  { top: 50%; left: 50%; transform: rotate(42.35deg) translateX(290px);  margin: -32.5px; }
+.planet:nth-child(4)  { top: 50%; left: 50%; transform: rotate(63.53deg) translateX(290px);  margin: -32.5px; }
+.planet:nth-child(5)  { top: 50%; left: 50%; transform: rotate(84.71deg) translateX(290px);  margin: -32.5px; }
+.planet:nth-child(6)  { top: 50%; left: 50%; transform: rotate(105.88deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(7)  { top: 50%; left: 50%; transform: rotate(127.06deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(8)  { top: 50%; left: 50%; transform: rotate(148.24deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(9)  { top: 50%; left: 50%; transform: rotate(169.41deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(10) { top: 50%; left: 50%; transform: rotate(190.59deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(11) { top: 50%; left: 50%; transform: rotate(211.76deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(12) { top: 50%; left: 50%; transform: rotate(232.94deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(13) { top: 50%; left: 50%; transform: rotate(254.12deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(14) { top: 50%; left: 50%; transform: rotate(275.29deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(15) { top: 50%; left: 50%; transform: rotate(296.47deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(16) { top: 50%; left: 50%; transform: rotate(317.65deg) translateX(290px); margin: -32.5px; }
+.planet:nth-child(17) { top: 50%; left: 50%; transform: rotate(338.82deg) translateX(290px); margin: -32.5px; }
+
+.planet {
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.planet img {
+    width: 65px;
+    height: 65px;
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s, filter 0.3s;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+    animation: counter-spin 60s linear infinite;
+}
+
+.planet:hover img {
+    transform: scale(1.4) !important;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+    z-index: 20;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes counter-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+}
