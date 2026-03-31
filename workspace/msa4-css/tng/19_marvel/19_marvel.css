@@ -1,0 +1,67 @@
+/* 공통 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+/* 사이드바 */
+
+.side-bar {
+    background-color: #ff3b49;
+    position: sticky;
+    top: 0;
+}
+
+.side-bar-inner {
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    padding: 50px 50px;
+}
+
+.nav-menu {
+    background-color: #ff5662;
+    padding: 15px;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li:hover {
+    background-color: black;
+    transition: 1.5s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 메인 */
+
+.main {
+    background-color: white;
+    height: 200vh; /* 나중에 지우기 */
+}
+
+.search-bar {
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+}
