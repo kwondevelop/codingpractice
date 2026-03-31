@@ -40,12 +40,6 @@ h1 {
 .back-button img {
     width: 60px;
     height: 60px;
-    transition: transform 0.3s;
-    filter: drop-shadow(0 0 8px rgba(255, 200, 50, 0.6));
-}
-
-.back-button img:hover {
-    transform: scale(1.2);
 }
 
 .orbit-container {
@@ -100,13 +94,12 @@ h1 {
     display: block;
     border-radius: 50%;
     transition: transform 0.3s, filter 0.3s;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
     animation: counter-spin 60s linear infinite;
 }
 
 .planet:hover img {
     transform: scale(1.4) !important;
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
     z-index: 20;
 }
 
