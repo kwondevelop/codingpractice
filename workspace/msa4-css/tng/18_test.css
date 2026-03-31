@@ -1,0 +1,23 @@
+.container {
+    background-color: lightblue;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+.item {
+    background-color: rgb(122, 135, 246);
+    border: 1px solid black;
+}
+
+.item:nth-child(3) {
+    grid-column: 1/3;
+}
+
+.item:nth-child(4) {
+    grid-row: 3/5;
+}

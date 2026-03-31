@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    background-color: lightblue;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+
+    /* grid-template-columns : grid의 컬럼 수와 너비를 지정 */
+    /* "fr" 단위는 grid 아이템이 남은 영역을 비율로써 나누어 적용 */
+    /* grid-template-columns: 50px 1fr 1fr; */
+    
+    /* grid-template-rows : grid의 로우 수와 높이를 지정 */
+    /* grid-template-rows: 50px 1fr 1fr; */
+
+    /* repeat(반복 횟수, 크기 단위) : 값이 반복 될 때 사용하는 함수 */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* minmax(최소값, 최대값) : 최소값과 최대값을 지정 */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+
+    /* auto-fit : 자동으로 컬럼 수를 조절, 현재 grid 아이템의 수와 grid 셀의 수가 일치하게 함 */
+    /* auto-fill : 자동으로 컬럼 수를 조절, min으로 설정한 값에 따라 계속해서 빈 셀을 채움 */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.item {
+    background-color: rgb(122, 135, 246);
+    border: 1px solid black;
+}
+
+.item:nth-child(1) {
+    /* grid-column, grid-row : 컬럼 또는 로우의 시작 번호와 끝 번호를 한번에 지정 */
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+
+.item:nth-child(7) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
