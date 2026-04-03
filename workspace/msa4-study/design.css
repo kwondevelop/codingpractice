@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   width: 1100px;
-  height: 3000px;
+  height: 1640px;
   position: relative;
 }
 
@@ -72,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: #bfbfbf 0px 4px 8px;
 }
 
 .box::before {
@@ -124,18 +125,50 @@ body {
   color: #000000;
   font-size: 30px;
   font-weight: bold;
-  margin: 10px 15px 2px;
 }
 
 .box p {
   color: #000000;
   font-size: 15px;
-  margin: 2px 15px 10px;
+  margin: 0 10px 15px;
+}
+
+.container3 {
+  background-color: #eff3f6;
+  padding: 0 100px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-box-img {
+  background-image: url('./nyang.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.second-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-box-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.second-box-title, .second-box-info {
+  padding-right: 20px;
 }
 
 .bottom {
-  background-color: #333333;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 12px;
   padding: 10px 0;
   width: 100%;
