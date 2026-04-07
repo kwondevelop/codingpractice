@@ -41,6 +41,10 @@ console.log(`전위 증감 연산자2 : ${num}`);
 num = 0;
 console.log(`후위 증감 연산자1 : ${num++}`);
 console.log(`후위 증감 연산자2 : ${num}`);
+num = 0;
+console.log(`전위 감소 연산자 : ${--num}`);
+console.log(`후위 감소 연산자 : ${num--}`);
+console.log(num);
 
 // 비교 연산자
 // 두 값을 비교해서 true 또는 false를 반환하는 연산자
