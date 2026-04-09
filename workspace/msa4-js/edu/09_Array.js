@@ -4,6 +4,7 @@
 // // 배열의 크기가 동적으로 변화 가능
 // // 인덱스(index) 번호가 각 요소에 부여되고 이를 이용해서 순서를 정함
 // // 반복문을 통해 배열의 각 요소에 쉽게 접근 가능
+// // const : 변수 선언 키워드
 
 // const arr1 = [1, 2, 3, 4, 5];
 // console.log(arr1[4]);
@@ -148,11 +149,90 @@
 // resultArr = arr.splice(2, 1, 100, 200, 300);
 // console.log(arr, resultArr);
 
-// Array.join(separator) : string
-// 배열의 요소를 구분자로 연결한 문자열을 만들어서 반환
-// 배열의 요소가 없으면 빈 문자열을 반환
-// separator : 요소 사이에 삽입할 문자열, 생략 시 쉼표(,)가 기본값
-arr = [1, 2, 3, 4, 5];
-resultArr = arr.join(' 더하기 ');
-console.log(arr, resultArr);
-//
+// // Array.join(separator) : string
+// // 배열의 요소를 구분자로 연결한 문자열을 만들어서 반환
+// // 배열의 요소가 없으면 빈 문자열을 반환
+// // separator : 요소 사이에 삽입할 문자열, 생략 시 쉼표(,)가 기본값
+// arr = [1, 2, 3, 4, 5];
+// resultArr = arr.join(' 더하기 ');
+// console.log(arr, resultArr);
+
+// // Array.sort() : T[] ** 원본 변경 **
+// // 배열의 요소를 문자열로 변환 후, 오름차순 정렬을 하고 정렬된 배열을 반환
+// arr = [6, 4, 7, 1, 11];
+// resultArr = arr.sort((a, b) => a - b);
+// console.log(arr, resultArr);
+
+// // Array.map(callback) : T[]
+// // 배열의 모든 요소에 대해 callback 함수를 반복 실행 후 
+// // callback 함수의 반환 값들을 모아서 새로운 배열로 반환
+// arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// resultArr = arr.map(val => {
+//   if (val % 3 === 0) {
+//     return '짝';
+//   } else {
+//     return val;
+//   }
+// });
+// console.log(arr, resultArr);
+
+// // Array.some(callback) : boolean
+// // 배열의 모든 요소에 대해 callback 함수를 실행 후
+// // 조건에 맞는 결과가 하나라도 있으면 true
+// arr = [1, 2, 3, 4, 5];
+// resultArr = arr.some(val => val === 100);
+// console.log(arr, resultArr);
+
+// arr = [
+//   { name: '고길동', age: 17 },
+//   { name: '둘리', age: 100000500 },
+//   { name: '도우너', age: 2 }
+// ];
+// resultArr = arr.some(item => item.name === '고길동');
+// console.log(arr, resultArr);
+
+// // Array.every(callback) : boolean
+// // 배열의 모든 요소에 대해 callback 함수를 실행 후
+// // 조건에 맞는 결과만 있어야 true
+// arr = [
+//   { name: '고길동', age: 17 },
+//   { name: '둘리', age: 100000500 },
+//   { name: '도우너', age: 12 }
+// ];
+// resultArr = arr.every(item => item.age < 10);
+// console.log(arr, resultArr);
+
+// // Array.filter(callback) : T[]
+// // 배열의 모든 요소에 대해 callback 함수를 실행 후
+// // 조건에 맞는 결과만 모아서 새로운 배열로 반환
+// arr = [
+//   { name: '고길동', age: 17 },
+//   { name: '둘리', age: 100000500 },
+//   { name: '도우너', age: 12 }
+// ];
+// resultArr = arr.filter(item => item.age < 50);
+// console.log(resultArr);
+
+// // Array.forEach(callback) : void
+// // 배열의 모든 요소에 대해 callback 함수를 실행 후
+// // 요소들을 하나씩 
+// arr = [
+//   { name: '고길동', age: 17 },
+//   { name: '둘리', age: 100000500 },
+//   { name: '도우너', age: 12 }
+// ];
+// arr.forEach((val, idx) => {
+// // 내가 하고 싶은 처리
+// });
+// for(let i = 0; i < arr.length; i++) {
+// // 내가 하고 싶은 처리
+// // arr[i];  
+// }
+
+const arr4 = [ 5, 7, 3, 4, 5, 1, 2, 0 ];
+const result = test(arr4);
+console.log(arr4, result);
+
+function test(arr) {
+  return arr.sort((a, b) => a - b);
+}
