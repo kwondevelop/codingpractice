@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오늘 뭐 먹지?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ 오늘 뭐 먹지?</h1>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button onclick="filterFood('all')">전체</button>
+      <button onclick="filterFood('korean')">한식</button>
+      <button onclick="filterFood('chinese')">중식</button>
+      <button onclick="filterFood('western')">양식</button>
+      <button onclick="randomFood()">랜덤 추천 🎲</button>
+    </div>
+
+    <div id="food-list" class="food-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
