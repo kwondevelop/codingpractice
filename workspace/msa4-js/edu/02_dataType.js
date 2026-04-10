@@ -40,4 +40,4 @@ const symbol1 = Symbol('심볼');
 // object(객체) : 키(key)와 값(value)을 쌍으로 저장하는 참조 타입
 let obj = {
   key1: 'value1'
-} 
+}
