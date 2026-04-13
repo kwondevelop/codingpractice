@@ -22,17 +22,31 @@ ul.insertBefore(janggi, document.querySelector('#apple'));
 const li = document.querySelector('#ul li:last-child');
 li.style.backgroundColor = 'beige';
 
+function setLineColor() { // 스타크래프트 추가 후 색상 부여
 const li_color = document.querySelectorAll('li');
 li_color.forEach((li, color) => {
-  if(color % 2 === 0) {
-    li.style.color = 'blue';
-  } else {
+  // if(color % 2 === 0) {
+  if((color + 1) % 2 === 0) {
     li.style.color = 'red';
+  } else {
+    li.style.color = 'blue';
   }
 });
+}
+setLineColor();
+
 // color가 index인데 컴퓨터에서 index는 0부터 시작하므로 
 // red와 blue의 위치를 변경
 // 0 - 짝수
 // 1 - 홀수
 // 2 - 짝수
 // . . .
+
+// 또는 color에 +1을 주어서 처음부터 인덱스 값을 올림
+// 그러므로 red와 blue의 위치가 다시 변경되어야함
+
+// 요소 추가 시 주의 사항
+const starcraft = document.createElement('li');
+starcraft.textContent = '스타크래프트';
+ul.insertBefore(starcraft, document.querySelector('#apple'));
+setLineColor();
