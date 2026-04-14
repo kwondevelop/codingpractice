@@ -62,7 +62,7 @@ let find = false;
 box.addEventListener('mouseenter', () => {
   // 아직 찾지 못한 상태일 때만 실행
   if (!find) {
-    alert('두근두근'); // 긴장감 메시지 출력
+    alert('. . .'); // 긴장감 메시지 출력
   }
 });
 
@@ -72,12 +72,16 @@ box.addEventListener('click', () => {
   if (!find) {
     find = true; // 상태를 "찾음"으로 변경
     alert('들켰다'); // 들킨 메시지 출력
-    box.style.opacity = '1'; // 박스를 보이게 함
+    box.classList.add('found'); // 팡! 애니메이션과 함께 나타남
   } else {
     // 이미 찾은 상태라면
     find = false; // 상태를 다시 "숨김"으로 변경
     alert('숨는다'); // 숨는 메시지 출력
-    box.style.opacity = '0'; // 다시 안 보이게 만듦
+    box.classList.remove('found'); // 클래스 제거
+    box.style.opacity = '';
+    box.style.transform = '';
+    box.style.width = '';
+    box.style.height = '';
     moveRandom(); // 숨을 때 새로운 랜덤 위치로 이동
   }
 });
