@@ -8,9 +8,7 @@
 // 	  - page: number
 // 	  - limit: number
 
-(() => { 
-  let allowFlag = true; // 디바운싱 제어용 플래그
-})
+let allowFlag = true; // 디바운싱 제어용 플래그
 
 // const baseUrl = 'https://picsum.photos/v2/list';
 // let page = 1;
@@ -94,11 +92,3 @@ btnReset.addEventListener('click', () => {
 //   container.textContent = '';
 //   page = 1;
 // })
-
-// 권민재씨 그만 주무세요.
-// 수업에 집중 좀 하시죠?
-// 언제까지 수업시간에 졸고 자고 그러실거죠??
-// 내일 아침에 시험인데???
-// 공부는 언제 하시려고
-// 아. 이미 다 아는거라 수업이 지루하신건가....
-// 역시 고수님..
