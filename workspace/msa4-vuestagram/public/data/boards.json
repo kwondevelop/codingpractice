@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "/dev/호시노아이.png",
+    "content": "주인공",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 2,
+    "img": "/dev/호시노아쿠아.png",
+    "content": "주인공 아들",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 3,
+    "img": "/dev/호시노루비.png",
+    "content": "주인공 딸",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 4,
+    "img": "/dev/아리마카나.png",
+    "content": "주인공 딸 그룹 멤버 및 주인공 아들 짝사랑",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 5,
+    "img": "/dev/쿠로카와아카네.png",
+    "content": "주인공 아들 비즈니스 커플",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 6,
+    "img": "/dev/MEM쵸.png",
+    "content": "주인공 딸 그룹 멤버",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 7,
+    "img": "/dev/삐에용.png",
+    "content": "주인공 딸 그룹 트레이너",
+    "writer": "아카사카 아카"
+  },
+  {
+    "id": 8,
+    "img": "/dev/사메지마아비코.png",
+    "content": "작중 만화가",
+    "writer": "아카사카 아카"
+  }
+]
