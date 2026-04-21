@@ -23,7 +23,12 @@
   <MgHeader/>
   
   <div class="main">
-    <RouterView/>
+    <MgList
+    :componentNameMgDetail="mainComponentList[1]"
+    @changeComponent="changeComponent" 
+    v-if="selectedMainComponent === mainComponentList[0]"
+    />
+    <MgDetail v-else-if="selectedMainComponent === mainComponentList[1]"/>
   </div>
 
 </template>
