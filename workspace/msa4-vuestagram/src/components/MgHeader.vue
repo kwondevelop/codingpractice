@@ -1,11 +1,15 @@
 <script setup>
 
+import { useCounterStore } from '../stores/useCounterStore';
+
+const counterStore = useCounterStore();
+
 </script>
 
 <template>
 
   <div class="header">
-    <h1>OSHIgram</h1>
+    <h1>OSHIgram {{ counterStore.count }}</h1>
     <div class="header-button-box">
       <button type="button" class="button button-small button-gray">Sign in</button>
       <button type="button" class="button button-small">Sign up</button>

@@ -1,28 +1,24 @@
 <script setup>
 
-import { ref, onBeforeMount } from 'vue';
-
 import axios from 'axios';
+import { onBeforeMount, ref} from 'vue';
+import { useBoardDetailStore } from '../stores/useBoardDetailStore';
 
-const board = ref({});
-
-onBeforeMount(async () => {
-  try {
-    const res = await axios.get('/data/board.json');
-    board.value = res.data;
-  } catch(error) {
-    console.error(error);
-  }
-});
+const boardDetailStore = useBoardDetailStore();
+onBeforeMount(boardDetailStore.getBoard);
 
 </script>
 
 <template>
 
-  <div class="container">
-    <div class="img" style="background-image: url('/dev/호시노루비.png');"></div>
-    <span class="author">작성자 : ???</span>
-    <span class="content">내용</span>
+  <!-- 
+      `v-if="board"` 사용 이유 : 데이터가 없는 상태에서 렌더링 시,
+      에러 발생 가능성이 있어서 데이터가 있을 때만 렌더링하도록 유도하기 위함 
+  -->
+  <div class="container" v-if="boardDetailStore?.board">
+    <div class="img" :style="{backgroundImage: `url('${boardDetailStore.board.img}')`}"></div>
+    <span class="author">작성자 : {{boardDetailStore.board.writer}}</span>
+    <span class="content">{{boardDetailStore.board.content}}</span>
   </div>
 
 </template>

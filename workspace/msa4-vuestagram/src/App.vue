@@ -8,6 +8,8 @@
   
   import MgDetail from './components/MgDetail.vue';
 
+  import PiniaTest from './components/PiniaTest.vue';
+
   const mainComponentList = ['MgList', 'MgDetail'];
 
   const selectedMainComponent = ref('MgList');
@@ -20,9 +22,12 @@
 
 <template>
 
+  <PiniaTest/>
+
   <MgHeader/>
   
   <div class="main">
+    <!-- 현재 라우터 컴포넌트를 어디에 렌더링 할지 위치를 설정 -->
     <RouterView/>
   </div>
 

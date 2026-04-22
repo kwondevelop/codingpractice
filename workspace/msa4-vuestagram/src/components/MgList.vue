@@ -27,7 +27,7 @@ const props = defineProps({
 const emit = defineEmits('changeComponent');
 
 // 라우터 사용 준비
-const router = useRouter
+const router = useRouter();
 function pushShow(id) {
   router.push(`/show/${id}`);
 }
@@ -37,7 +37,7 @@ function pushShow(id) {
 <template>
 
   <div class="container">
-    <div class="card" 
+    <div class="card"
     v-for="item in boardList" 
     :key="item.id" 
     :style="{backgroundImage: `url('${item.img}')`}" 
@@ -65,6 +65,7 @@ function pushShow(id) {
   background-size: cover;
   border-radius: 15px;
   padding-top: 70%;
+  cursor: pointer;
 }
 
 </style>
